@@ -1,0 +1,509 @@
+
+*{
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    color: #5b6720;
+    font-size: 20px;
+}
+body{
+    background-color: #eeeef5;
+    transition: transform 0.3s ease;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color:  white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+/* PERFIL---------------------------------------- */
+
+.perfil{
+    background-image: url(../image/perfil.jpg);
+    background-size: cover;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.second-menu nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+/* .menu-desplegable-abierto body {
+    transform: translateX(200px); /* Ajusta el valor según el ancho de tu menú desplegable */
+  
+
+.second-menu ul li {
+    position: relative;
+}
+
+.second-menu ul li ul {
+    margin-top: 3px ;
+    display: none;
+    position: absolute;
+    background-color:  white;
+    border-radius: 10px;
+    top: 100%;
+    z-index: 1;
+}
+
+/* .second-menu ul li:hover > body {
+    display: block; 
+    transform: translateX(200px);
+} */
+
+.second-menu ul ul li:hover {
+    background-color: #eeeef5;
+    transform: translateX(200px);
+}
+
+.second-menu ul ul li {
+    width: 400px;
+}
+
+ul ul a {
+    font-size: 15px;
+    color: black;
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+
+.opcion{
+    display: flex;
+    padding: 2px;
+    gap: 3px;
+}
+
+.opcion img{
+    height: 5px;
+    width: 5px;
+
+
+}
+
+/* BARRA LATERAL-------------------------------------------- */
+
+.first-menu nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.first-menu ul li {
+    position: relative;
+
+}
+
+.first-menu ul li ul {
+    /* margin-top: 35px; */
+    padding-top: 60px;
+    margin-left: 0px;
+    display: none;
+    grid-template-rows: 9% 9% 9% 9% 9% 9% 9% 9%;
+    position: absolute;
+    background-color:  white;
+    width: 300px;
+    height: 810px;
+    z-index: 1;
+}
+
+/* .first-menu ul li ul li{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    padding-left: 10px;
+} */
+
+.first-menu ul li:hover > ul {
+    display: grid; 
+    left: -60px;
+    transition-property: left;
+    transition-duration: .10s;
+}
+
+.boton-first {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    padding: 15px;
+    background-color: #1675F1;
+    width: 85%;
+    height: 36%;
+    border-radius: 10px;
+}
+
+.boton-first p{
+    color: white;
+}
+
+.subt{
+    color: #ede8e8;
+
+}
+
+.botones p{
+    color: black;
+   
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    padding: 15px;
+}
+
+.botones:hover {
+    background-color: #eeeef5;
+    width: 85%;
+    height: 40%;
+    border-radius: 10px;
+}
+
+ul ul a {
+    font-size: 15px;
+    color: black;
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+nav ul.open {
+    display: flex; 
+}
+
+nav ul li ul {
+    position: static; 
+    display: none;
+}
+
+
+/* cuerpo----------------------------------------------- */
+section{
+    margin: 20px;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+  }
+
+.titulo{
+    display: grid;
+    height: 100%;
+
+}
+
+.datos{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    justify-content: center;
+    gap: 3%;
+}
+
+.datos-item{
+    background-color: white;
+    display: grid;
+    padding: 15px;
+    grid-template-rows: 30% 30% 20%;
+    height: 110px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #fefefe;
+
+}
+
+.datos-item p{
+    color: black;
+}
+
+.texto{
+    padding: 20px;
+    display: grid;
+    height: 100px;
+    background-color: rgb(227, 223, 223);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #c5c4c4;
+}
+.encabezado{
+    text-align: center;
+    margin: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 70px;
+
+}
+
+
+/*INICIO*/
+
+.encabezado{
+    text-align:left;
+    margin:3px;
+    margin-top: 3%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    border: 0cm;
+    margin-bottom: 10%;
+
+}
+.galeriac{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff2f2;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out;
+    border: 1px rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.galeriac img{
+    margin-top: 10%;
+    width: 350px;
+}
+
+.fotog{
+    box-shadow: 10px 20px 10px #ffffff;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 5px;
+    padding: 5px;
+    grid-auto-flow: dense;
+}
+.fotog:hover{
+    filter: opacy(0.9);
+    transform: scale(1.04);
+}
+@media(min-width: 00px){
+    .wide{
+        grid-column: span 2;
+    }
+    .tall{
+        grid-row: span 2;
+    }
+}
+
+
+ /* Footer------------------------------------------------------------------------------------------------------ */
+
+footer{
+    margin-top: 150px;
+    height: 210px;
+    width: 100%;
+    background-color: rgb(253, 249, 250);
+}
+
+.contenedor{
+    display: grid;
+    margin-top: 210%;
+    grid-template-columns: 15% 15% 15%;
+    justify-content: center;
+    gap: 25px;
+}
+.conten-pie{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+footer div a{
+    color: black;
+    font-size: 20px;
+}
+
+.conten-pie p{
+    font-size: 20px;
+}
+
+hr{
+    border: 1px solid rgb(228, 224, 224);
+    width: 40%;
+}
+
+
+/*
+.fote{
+    width: 100% ;
+    height: 100px;
+    border: solid;
+    margin-top: 120px;
+
+}
+
+//*catalogo de cada una */
+.encabezado{
+    text-align: center;
+    margin: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 70px;
+
+}
+.galeria_principal-cat{
+    margin-top: 90px;
+    margin-left: 85px;
+    margin-right: 85PX;
+    height: 300px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(500px, auto);
+    gap: 80px;
+    grid-auto-flow: dense;
+   
+}
+
+.grid-item-cat{
+    display: grid;
+    padding-left: 15%;
+    text-align: center;
+    grid-template-rows: 30% 30% 30%;
+    box-shadow: 3px 4px 30px rgb(222, 209, 209);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+ 
+.boton{
+    margin-top: 0;
+    font-size: 20px;
+    padding-left: 10%;
+}
+.boton:hover{
+ border-radius: 2px;
+}
+.foto-galeria-cat{
+
+    margin-top: 0;
+    margin-left: 0;
+    background-size: cover;
+    width: 77%; 
+   justify-content: center;
+   padding: 10px;
+}
+
+.foto-galeria-cat img{
+    margin-top: 0;
+    margin-left: 0;
+    background-size: cover;
+}
+
+.detalles-foto-cat{
+    display: flex;
+    flex-direction: column;
+    width: 77%;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-detalles-cat{
+    margin-top: 135%;
+    padding-left: 10%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.precio-cat{
+    font-size: 20px;
+    padding-left: 10%;
+}
+
+.tallas-cat{
+    display: flex;
+    gap: 10PX;
+    padding-left: 15%;
+}
+
+.talla-cat{
+    color: #000000;
+    padding-left: 30%;
+    font-size: 15px;
+    border-radius: 20%;
+    padding: 5px;
+    border: 2px solid black;
+}
+/*PIE DE PAGINA 2*/
+
+ /* Footer------------------------------------------------------------------------------------------------------ */
+
+ footer{
+    margin-top: 150px;
+    height: 210px;
+    width: 100%;
+    background-color: rgb(253, 249, 250);
+}
+
+.contenedor2{
+    display: grid;
+    margin-top: 55%;
+    grid-template-columns: 15% 15% 15%;
+    justify-content: center;
+    gap: 25px;
+}
+.conten-pie{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+footer div a{
+    color: black;
+    font-size: 20px;
+}
+
+.conten-pie p{
+    font-size: 20px;
+}
+
+hr{
+    border: 1px solid rgb(228, 224, 224);
+    width: 40%;
+}
+/*producto*/
+.grid-item{
+    display: grid;
+    grid-template-rows: 20% 80% ;
+    grid-template-columns: 30% 70%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.fotos{
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    grid-column: 1;
+    grid-row: 1/span 2;
+    margin: 0% auto;
+    margin: center;
+
+}
+.foto2{
+    grid-column: 2;
+    grid-row: 1;
+
+}
